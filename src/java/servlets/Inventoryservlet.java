@@ -16,33 +16,24 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author parve
  */
-public class homeInventoryservlet extends HttpServlet {
+public class Inventoryservlet extends HttpServlet {
+
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
-        return;
-    }
-        
-        
-        @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-       String username=request.getParameter("username");
-       String password=request.getParameter("password"); 
-       String message="";
-       
-       if(username==null ||username.equals("")||password==null|| password.equals("")){
-           message="Invalid Login";
-           
-       }
-       
-       request.setAttribute("message",message);
-          getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
-        return;
+        getServletContext().getRequestDispatcher("/WEB-INF/inventory.jsp").forward(request,response);
+      
     }
 
- 
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+      getServletContext().getRequestDispatcher("/WEB-INF/inventory.jsp").forward(request,response);
+    }
+
+  
+
 }

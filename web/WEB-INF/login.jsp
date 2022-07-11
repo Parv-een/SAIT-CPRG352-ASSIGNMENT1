@@ -1,6 +1,5 @@
 <%-- 
     Document   : login
-    Created on : 9-Jul-2022, 10:47:07 PM
     Author     : parve
 --%>
 
@@ -12,7 +11,7 @@
         <title>Home Inventory</title>
     </head>
     <body>
-        <form action="login" method="post">
+        <form action="" method="post">
         <h1>Home Inventory</h1>
         <main>
             <h2>Login</h2>
@@ -22,7 +21,7 @@
             <label>Password:</label>
             <input type="password" name="password" value="">
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" name="action">
         </main>
         </form>
         <p>${message}</p>
