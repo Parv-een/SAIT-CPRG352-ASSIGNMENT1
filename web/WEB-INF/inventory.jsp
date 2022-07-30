@@ -1,8 +1,10 @@
 <%-- 
     Document   : inventory
     Created on : 11-Jul-2022, 10:33:58 AM
-    Author     : parve
+    Author     : parveen Kaur 
 --%>
+
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,8 +32,15 @@
                 <label>Price:</label>
                 <input type="text"  name="price" value="">
                 <br>
-                <input type="submit" name="action" value="Add">
             </form>
+            
+                   <input type="submit" name="action" value="Add" name="Add">
+            
+          
+           
+           
+          
+ 
             <nav>
                 <a href="login">Log Out</a>
             </nav>
